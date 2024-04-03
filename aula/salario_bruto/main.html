@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Salario bruto </title>
+</head>
+<body>
+    <main>
+        <form>
+            <label for="nome_funcionario">Nome do funcionário:<input type="text" id="nome_funcionario"></label><br>
+            <label for="beneficio_salario">Benefícios:<input type="number" id="beneficio_salario"></label><br>
+            <label for="descontos_salario">Descontos:<input type="number" id="descontos_salario"></label><br>
+            <label for="salario_bruto">Salário bruto:<input type="number" id="salario_bruto"></label><br>
+            <button type="submit">Adicionar</button>
+        </form>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome do Funcionário</th>
+                    <th>Salário Bruto</th>
+                    <th>Desconto(s)</th>
+                    <th>Benefícios</th>
+                    <th style="color: greenyellow;">Salário Líquido</th>
+                </tr>
+            </thead>
+            <tbody id="tabela"></tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Maior Salário</th>
+                    <th>Soma dos Descontos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="maior_salario"></td>
+                    <td id="soma_descontos"></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
