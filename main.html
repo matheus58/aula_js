@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Idades</h1>
+        <form action="idades">
+            <label for="Nome">Nome: <input type="text" id="nome"></label>
+            <label for='nota01'>nota:<input type="number" id="nota01"></label>
+            <label for='nota02'>nota :<input type="number" id="nota02"></label>
+            <button type="submit">Adicionar</button>
+        </form>
+        <table>
+            <header>
+                <th>id</th>
+                <th>Nome</th>
+                <th>Nota 01</th>
+                <th>Nota 02</th>
+                <th>Media</th>
+            </header>
+            <tbody id="tabelas_alunos"></tbody>
+        </table>
+        <table>
+            <thead>
+                <th>media da turma </th>
+                <th> maior media da turma </th>
+            </thead>
+            <tbody >
+                <th id="media_da_turma"></th>
+                <th id="maior_media_da_turma"></th>
+            </tbody>
+        </table>
+ <script src="index.js"></script>   
+</body>
+</html>
